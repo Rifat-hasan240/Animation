@@ -1,0 +1,91 @@
+.container-animation {
+    background-color: #111a28;
+    padding: 20px;
+    max-width: 1000px;
+   }
+   .container-animation ul {
+    list-style-type: none;
+   }
+   .container-animation ul li {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 50px;
+    color: white;
+    position: relative;
+   }
+   .container-animation ul li::before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0px;
+    background-color: #1d293a;
+    border-radius: 10px;
+    width: 100%;
+    height: 20px;
+    }
+   
+   .container-animation ul li::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0px;
+    background-color: #00cf5d;
+    border-radius: 10px;
+    width: 0;
+    height: 20px;
+   animation-duration: 4s;
+   animation-timing-function: linear;
+   animation-delay: 1s;
+   animation-fill-mode: forwards;
+   animation-iteration-count: 3;
+   }
+   /*html animation code  start*/
+   .container-animation ul li.html::after {
+   animation-name: html;
+   }
+   @keyframes html {
+   to{
+      width: 70%;
+   }      
+   }
+   /* html animation code  end*/
+   /* css animation code start */
+   .container-animation ul li.css::after {
+    animation-name: css;
+   }
+   @keyframes css {
+   to{
+      width: 50%;
+    }       
+   }
+   /*css animation code end*/
+   /*bootstrap animation code start*/
+   .container-animation ul li.bootstrap::after {
+    animation-name: b4;
+   }
+   @keyframes b4 {
+   to{
+    width: 40%;
+      }      
+   }
+   /* bootatrap animation code end */
+   /* git animation code start */
+   .container-animation ul li.git::after {
+    animation-name: git;
+   }
+   @keyframes git {
+   to{
+      width: 30%;
+   } 
+   }
+   /*git animation code end*/
+   /* github animation code start */
+   .container-animation ul li.github::after {
+    animation-name: github;
+   }
+   @keyframes github {
+   to{
+   width: 20%;
+   }
+   }
+   /* github animation code end */

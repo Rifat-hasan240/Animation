@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins , sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;}
+#container{
+    position: relative;
+}
+#container h1{
+    position: absolute;
+    
+    transform: translate(-50%,-50%);
+    font-size: 8rem;
+}
+#container h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+#container h1:nth-child(2){
+ color: #03a9f4;
+ animation: life 3s ease-in-out infinite;
+}
+@keyframes life {
+    0%,100%{
+        /* clip-path: polygon(1% 25%, 38% 44%, 98% 30%, 99% 100%, 3% 99%); */
+        clip-path: polygon(0% 45%,15% 44%,32% 50%,54% 60% 71%,84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50%{
+        /* clip-path: polygon(1% 25%, 38% 44%, 98% 30%, 99% 100%, 3% 99%, 44% 24%, 94% 22%, 31% 49%, 43% 52%, 75% 54%, 94% 52%, 99% 50%); */
+
+        clip-path: polygon(0% 45%,15% 44%,32% 50%,54% 60%, 70% 61%,84% 59%,100% 52%,100% 100%, 0% 100%);} 
+
+}
